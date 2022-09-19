@@ -1,0 +1,15 @@
+{
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Notes",
+  "newLinkFormat": "absolute",
+  "showUnsupportedFiles": true,
+  "trashOption": "none",
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "Files",
+  "readableLineLength": false,
+  "showFrontmatter": true,
+  "promptDelete": false,
+  "livePreview": false,
+  "strictLineBreaks": false,
+  "showLineNumber": true
+}
