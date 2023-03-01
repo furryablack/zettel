@@ -1,58 +1,82 @@
 # = READme
 
-### === Что такое Area
-- Заметки в папке `Areas/**`.
-- Не содержат контента, являются виртуальными папками для заметок в папке `Notes/*`.
-- У заметки может быть несколько виртальных папок (areas).
-- Автоматически выводит 100 последних (ctime) заметок списком.
+### === What Is
+
+Knowledge managment system based on Zettelkasten method.
+
+This project doesn't contain any notes. It's just an empty vault that is ready to work.
+
+Positive things:
+- Offline works
+- Based on text files
+- Obsidian is free and small tool
+- Notes view like a graph
+- There is a possibility to share Obsidian Vault with notes between some devices where Obsidian can work
+
+Negative things:
+- There is no simple way to share your vault
+- This solution requires knowledge and skills about JS programming to serve issues during note writing process
+- Images and other non-text files increases your vault's size very much
+
+### === Tech tools
+
+- Obsidian (last stable version)
+- Obsidian plugins: DataView, Advanced Tables, Copy Button For Code Block
+- Custom JS Code alongside DataView plugin
+
+### === What is Area
+- Notes in the `Areas/**` folder.
+- Do not contain any content, are virtual folders for notes that located in the folder named `Notes/*`.
+- A note can have several virtual folders (named like `areas`).
+- Automatically displays the last 100 (sorted by ctime) notes in a list.
 
 ### === NULLABLE
-- Заметки из папки `Notes/*` у которых есть `00 Null`.
-- Автоматически выводит 100 последних (ctime) заметок списком.
-- `00 Null` - area по умолчанию для новых заметок.
+- Notes in the  `Notes/*` folder that have `00 Null` area.
+- Automatically displays the last 100 (sorted by ctime) notes in a list.
+- `00 Null` - default area for new notes, you should change it during note writing.
 
 ### === IN-BOX and MOCs
-- Заметки из папки `Notes/*` с фильтрацией по тэгам `inbox/true` и `moc/true` соответсвенно.
-- Автоматически выводит 100 последних (ctime) заметок списком.
+- Notes in the `Notes/*` folder filtered by `inbox/true` and `moc/true` tags respectively.
+- Automatically displays the last 100 (sorted by ctime) notes in a list.
 
 ### === Tags
 
 -- `id/%zettelkasten-id%`
-Генерируется автоматически из даты и времени.
+It generates automatically alongside date and time.
 
 -- `inbox/%boolean$`
-**true** (по умолчанию) заметка в работе, **false** - заметка в архиве.
+**true** (default) a note in progress, **false** - a note in archive (or complited).
 
 -- `green/%boolean%`
-**false** (по умолчанию) авторская заметка, **false** - обычная.
+**false** (default) an author's note, **false** - no author's note.
 
 -- `moc/%boolean%`
-**false** (по умолчанию) заметка с заметками, Map Of Content.
-**green/false** - так как это заметка, объединяющая другие заметки (green и не green) под какой-то темой.
+**false** (default) a note with notes or Map Of Content.
+**green/false** - always false by default because this is a note that groups other notes.
 
 -- `tag/%string%`
-Контентные теги для поиска.
+Content tags to help to search.
 
 ### === Key-bindings
 
-- `Ctrl + O` - новая заметка создается через поиск.
-- `Ctrl + E` - переключение редактора.
-- `Ctrl + T` - вставить темплейт.
-- `Ctrl + C` - копировать.
-- `Ctrl + Shift + C` - компановщик.
-- `Ctrl + L` - авто-форматирование таблиц.
-- `Ctrl + P` - панель команд.
-- `Ctrl + M` - переместить файл.
-- `Ctrl + G` - отрыть граф.
-- `Ctrl + Shift + G` - открыть локальный граф.
-- `Ctrl + K` - вставить markdown ссылку.
-- `Ctrl + I` - текст курсивом.
-- `Ctrl + B` - жирный текст.
-- `Ctrl + F` - поиск в файле.
-- `Ctrl + Shift` - поиск во всех файлах.
-- `Ctrl + S` - сохранить файл.
-- `Ctrl + H` - поиск и замена в файле.
-- `Ctrl + Shift + <-` - назад.
-- `Ctrl + Shift + ->` - вперед.
-- `F1` - файл менеджер.
-- `F2` - экспорт в PDF.
+- `Ctrl + O` - a new note is created through the search.
+- `Ctrl + E` - switch editor.
+- `Ctrl + T` - paste template.
+- `Ctrl + C` - copy.
+- `Ctrl + Shift + C` - linker.
+- `Ctrl + L` - auto-format tables.
+- `Ctrl + P` - command bar.
+- `Ctrl + M` - move the file.
+- `Ctrl + G` - open graph.
+- `Ctrl + Shift + G` - open local graph.
+- `Ctrl + K` - insert a markdown link.
+- `Ctrl + I` - text in italics.
+- `Ctrl + B` - bold text.
+- `Ctrl + F` - search in a file.
+- `Ctrl + Shift` - search in all files.
+- `Ctrl + S` - save the file.
+- `Ctrl + H` - search and replace in a file.
+- `Ctrl + Shift + <-` - back.
+- `Ctrl + Shift + ->` - forward.
+- `F1` - file manager.
+- `F2` - export to PDF.
