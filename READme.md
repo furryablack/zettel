@@ -52,7 +52,6 @@ It generates automatically alongside date and time.
 
 -- `moc/%boolean%`
 **false** (default) a note with notes or Map Of Content.
-**green/false** - always false by default because this is a note that groups other notes.
 
 -- `tag/%string%`
 Content tags to help to search.
