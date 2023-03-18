@@ -8,5 +8,4 @@
 !/Files/*.gitkeep
 
 /Areas/*
-!/Areas/*.gitkeep
 !/Areas/00 Null.md
