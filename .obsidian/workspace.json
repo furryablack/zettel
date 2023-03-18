@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ce60ef861682870e",
+        "id": "644ce1493a372140",
         "type": "tabs",
         "children": [
           {
-            "id": "060401caf7753617",
+            "id": "914b5e4f2b31d95d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "READme.md",
+                "file": "Areas/00 Null.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#id/2022-09-12",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "READme.md",
+                "file": "Areas/00 Null.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "READme.md",
+                "file": "Areas/00 Null.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "READme.md"
+                "file": "Areas/00 Null.md"
               }
             }
           }
@@ -149,14 +149,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "060401caf7753617",
+  "active": "5dd2458b2ef08664",
   "lastOpenFiles": [
+    "Files",
+    "Notes",
+    "Templates/Generic Area.md",
+    "Templates/Generic Note.md",
     "IN-BOX.md",
     "MOCs.md",
     "NULLABLE.md",
     "READme.md",
-    "Templates/Generic Area.md",
-    "Templates/Generic Note.md",
     "Areas/00 Null.md",
     "Notes/Test.md",
     "Dirty.md",

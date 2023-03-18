@@ -1,6 +1,6 @@
 #  = {{Title}}
 #id/{{date:YYYY-MM-DD}}/{{time:HH}}-{{time:mm}}-{{time:ss}}
-#inbox/true | #green/false | #moc/false
+#inbox/true | #moc/false
 
 ---
 ### === Paragraph

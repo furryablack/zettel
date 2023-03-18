@@ -47,9 +47,6 @@ It generates automatically alongside date and time.
 -- `inbox/%boolean$`
 **true** (default) a note in progress, **false** - a note in archive (or complited).
 
--- `green/%boolean%`
-**false** (default) an author's note, **false** - no author's note.
-
 -- `moc/%boolean%`
 **false** (default) a note with notes or Map Of Content.
 
