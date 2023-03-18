@@ -1,4 +1,6 @@
 .trash
 
-/Notes/
-/Files/
+/Notes/*
+!/Notes/*.gitkeep
+/Files/*
+!/Files/*.gitkeep
