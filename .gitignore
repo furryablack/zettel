@@ -1,6 +1,12 @@
-.trash
+/.trash/
+/.obsidian/workspace*
 
 /Notes/*
 !/Notes/*.gitkeep
+
 /Files/*
 !/Files/*.gitkeep
+
+/Areas/*
+!/Areas/*.gitkeep
+!/Areas/00 Null.md
