@@ -10,4 +10,4 @@
 /Areas/*
 !/Areas/00 Null.md
 
-*.zip
+/backups/
