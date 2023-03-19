@@ -18,6 +18,12 @@ dv.span('<span style="opacity:0.75;">-> notes: ' + pagesCount + '</span>');
 dv.span('<br /><br />');
 
 for (let page of limitedPages) {
+	const areas = Array.from((page.file.outlinks || []))
+		.filter(l => l.path.indexOf('00 ') > -1)
+		.map(l => '<span style="font-size:0.86rem;">' + l + '</span>').join(' &lowast; ');
+		
 	dv.span('<span style="opacity:0.5;">= </span>' + page.file.link + '<br />');
+	dv.span('<span style="opacity:0.5;">+ </span>' + areas);
+	dv.span('<br /><br />');
 }
 ```
