@@ -1,0 +1,29 @@
+# = ACCEPTED
+
+```dataviewjs
+const LIMIT = 100;
+const NOTES_FOLDER = 'Notes';
+const IS_INBOX = 'inbox/false';
+
+const areaPages = dv.pages()
+	.where(p => p.file.folder === NOTES_FOLDER)
+	.where(p => (p.file.tags || []).find(_ => _.indexOf(IS_INBOX) >= 0));
+
+const pagesCount = areaPages.length;
+const limitedPages = areaPages.sort(_ => _.ctime, 'DESC').limit(LIMIT);
+
+dv.span('<span style="opacity:0.75;">-> limit: ' + LIMIT + '</span><br />');
+dv.span('<span style="opacity:0.75;">-> notes: ' + pagesCount + '</span>');
+
+dv.span('<br /><br />');
+
+for (let page of limitedPages) {
+	const areas = Array.from((page.file.outlinks || []))
+		.filter(l => l.path.indexOf('00 ') > -1)
+		.map(l => '<span style="font-size:0.86rem;">' + l + '</span>').join(' &lowast; ');
+		
+	dv.span('<span style="opacity:0.5;">= </span>' + page.file.link + '<br />');
+	dv.span('<span style="opacity:0.5;">+ </span>' + areas);
+	dv.span('<br /><br />');
+}
+```
