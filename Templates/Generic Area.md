@@ -13,7 +13,7 @@ const currName = dv.current().file.path;
 if (currName.indexOf(AREAS_FOLDER) >= 0) {
 	const areaPages = dv.pages()
 		.where(p => p.file.folder === NOTES_FOLDER)
-		.where(p => (p.file.outlinks || []).find(_ => currName.indexOf(_)));
+		.where(p => (p.file.outlinks || []).find(_ => currName.indexOf(_.path) >= 0));
 
 	const pagesCount = areaPages.length;
 	const limitedPages = areaPages.sort(_ => _.ctime, 'DESC').limit(LIMIT);

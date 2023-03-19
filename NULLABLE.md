@@ -7,7 +7,7 @@ const IS_NULLABLE_AREA = '00 Null';
 
 const areaPages = dv.pages()
 	.where(p => p.file.folder === NOTES_FOLDER)
-	.where(p => (p.file.outlinks || []).find(_ => IS_NULLABLE_AREA.indexOf(_)));
+	.where(p => (p.file.outlinks || []).find(_ => _.path.indexOf(IS_NULLABLE_AREA) >= 0));
 
 const pagesCount = areaPages.length;
 const limitedPages = areaPages.sort(_ => _.ctime, 'DESC').limit(LIMIT);
